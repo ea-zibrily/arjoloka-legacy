@@ -1,0 +1,4 @@
+repository "arjoloka-legacy/arjoloka-legacy@1374820078159@cloud"
+  path "/"
+    br "/main"
+    co "/main"
