@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="candi-sumur" size="1.000000 1.409677" />
+    <ImageTarget name="candi-pari" size="1.000000 1.409677" />
+    <ImageTarget name="candi-dermo" size="1.000000 1.409692" />
     <ImageTarget name="uma-tokai" size="1.000000 1.375000" />
     <ImageTarget name="uma-suzuka" size="1.000000 1.437500" />
   </Tracking>
