@@ -7,7 +7,7 @@ namespace Arjoloka.Data
     {
         [Header("Data")]
         [SerializeField] private string templeID;
-        [SerializeField] private bool isUnlocked;
+        [SerializeField] private bool isLocked;
         [SerializeField] private string templeName;
         [SerializeField] [TextArea(5, 15)] private string templeDescription;
         [SerializeField] [TextArea(5, 15)] private string galleryDescription;
@@ -15,7 +15,7 @@ namespace Arjoloka.Data
         
         // Getters
         public string TempleID => templeID;
-        public bool IsUnlocked => isUnlocked;
+        public bool IsUnlocked => isLocked;
         public string TempleName => templeName;
         public string TempleDescription => templeDescription;
         public string GalleryDescription => galleryDescription;

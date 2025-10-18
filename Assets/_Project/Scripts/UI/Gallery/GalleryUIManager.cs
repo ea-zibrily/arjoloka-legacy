@@ -1,3 +1,4 @@
+using Arjoloka.Data;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,11 @@ namespace Arjoloka.UI
         [SerializeField] private MenuUIManager menuManager;
 
         // Methods
+        private void OnEnable()
+        {
+            InitializeGallery();
+        }
+
         private void Start()
         {
             galleryPopupUI.SetActive(false);
@@ -21,7 +27,20 @@ namespace Arjoloka.UI
         // Core
         private void InitializeGallery()
         {
-            
+            // Chaced
+            var container = TempleDataContainer.Instance;
+
+            foreach (var view in galleryViews)
+            {
+                var data = container.GetTempleDataWithID(view.ViewID);
+                if (data == null)
+                {
+                    Debug.LogWarning($"GalleryView with ID {view.ViewID} not found in TempleDataContainer.");
+                    continue;
+                }
+                view.ModifyItemLock(data.IsUnlocked);
+            }
+
         }
 
         private void OnClickBack()

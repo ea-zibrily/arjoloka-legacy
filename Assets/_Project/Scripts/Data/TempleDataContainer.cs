@@ -15,7 +15,7 @@ namespace Arjoloka.Data
         {
             Instance = this;
         }
-
+        
         public List<TempleData> GetAllTempleDatas()
         {
             return templeDatas;
@@ -24,11 +24,6 @@ namespace Arjoloka.Data
         public TempleData GetTempleDataWithID(string templeID)
         {
             return templeDatas.Find(x => x.TempleID == templeID);
-        }
-
-        public bool IsTempleUnlocked(string templeID)
-        {
-            return GetTempleDataWithID(templeID).IsUnlocked;
         }
 
         public bool IsTempleDatasNull()
