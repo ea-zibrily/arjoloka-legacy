@@ -1,6 +1,6 @@
-using Arjoloka.Data;
 using UnityEngine;
 using UnityEngine.UI;
+using Arjoloka.Data;
 
 namespace Arjoloka.UI
 {
@@ -29,7 +29,6 @@ namespace Arjoloka.UI
         {
             // Chaced
             var container = TempleDataContainer.Instance;
-
             foreach (var view in galleryViews)
             {
                 var data = container.GetTempleDataWithID(view.ViewID);
@@ -38,9 +37,8 @@ namespace Arjoloka.UI
                     Debug.LogWarning($"GalleryView with ID {view.ViewID} not found in TempleDataContainer.");
                     continue;
                 }
-                view.ModifyItemLock(data.IsUnlocked);
+                view.ModifyItemLock(!data.IsUnlocked);
             }
-
         }
 
         private void OnClickBack()

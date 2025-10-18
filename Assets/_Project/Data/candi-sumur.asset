@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: candi-sumur
   m_EditorClassIdentifier: 
   templeID: CID-02
-  isUnlocked: 0
+  isLocked: 1
   templeName: Candi Sumur
   templeDescription: 
   galleryDescription: 'Candi ini berlokasi di Desa Candipari, Porong, Sidoarjo, dan

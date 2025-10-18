@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: candi-pari
   m_EditorClassIdentifier: 
   templeID: CID-01
-  isUnlocked: 0
+  isLocked: 1
   templeName: Candi Pari
   templeDescription: 
   galleryDescription: Terletak di Desa Candipari, Porong, Sidoarjo, Candi Pari berdiri

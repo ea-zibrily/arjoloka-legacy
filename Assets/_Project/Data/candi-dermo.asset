@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: candi-dermo
   m_EditorClassIdentifier: 
   templeID: CID-03
-  isUnlocked: 0
+  isLocked: 1
   templeName: Candi Dermo
   templeDescription: 
   galleryDescription: Candi Dermo berada di Desa Candinegoro, Kecamatan Wonoayu,
