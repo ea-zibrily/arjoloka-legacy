@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d0c7a7734f5514c963d62824ee3931, type: 3}
   m_Name: candi-pari
   m_EditorClassIdentifier: 
-  galleryID: CID-01
-  galleryName: Candi Pari
+  templeID: CID-01
+  isUnlocked: 0
+  templeName: Candi Pari
+  templeDescription: 
   galleryDescription: Terletak di Desa Candipari, Porong, Sidoarjo, Candi Pari berdiri
     megah sebagai salah satu peninggalan bersejarah dari masa Kerajaan Majapahit.
     Berdasarkan angka tahun yang terukir pada bagian tubuhnya, candi ini dibangun
     pada tahun <b>1293 Saka (1371 Masehi)</b>, pada masa pemerintahan Raja Hayam
     Wuruk.
-  galleryImage: {fileID: 21300000, guid: 8c3c7b03e8d98264d8dfc984f126daef, type: 3}
+  templeImage: {fileID: 21300000, guid: 8c3c7b03e8d98264d8dfc984f126daef, type: 3}

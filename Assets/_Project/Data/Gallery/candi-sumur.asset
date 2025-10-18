@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d0c7a7734f5514c963d62824ee3931, type: 3}
   m_Name: candi-sumur
   m_EditorClassIdentifier: 
-  galleryID: CID-02
-  galleryName: Candi Sumur
+  templeID: CID-02
+  isUnlocked: 0
+  templeName: Candi Sumur
+  templeDescription: 
   galleryDescription: 'Candi ini berlokasi di Desa Candipari, Porong, Sidoarjo, dan
     diyakini dibangun pada abad <b>ke-14</b> Masehi. Bangunannya berbentuk bujur
     sangkar berukuran sekitar <b>8 x 8 meter</b>, terbuat dari batu bata merah dan
     menghadap ke arah barat. Di dalam biliknya terdapat sebuah sumur dengan kedalaman
     sekitar 3 meter, yang menjadi asal nama candi ini. '
-  galleryImage: {fileID: 21300000, guid: 164eb9a797822e946b592ccd4ca3c3a4, type: 3}
+  templeImage: {fileID: 21300000, guid: 164eb9a797822e946b592ccd4ca3c3a4, type: 3}

@@ -8,11 +8,13 @@ namespace Arjoloka.UI
         [Header("Properties")]
         [SerializeField] private GalleryView[] galleryViews;
         [SerializeField] private Button backButtonUI;
+        [SerializeField] private GameObject galleryPopupUI;
         [SerializeField] private MenuUIManager menuManager;
 
         // Methods
         private void Start()
         {
+            galleryPopupUI.SetActive(false);
             backButtonUI.onClick.AddListener(OnClickBack);
         }
 

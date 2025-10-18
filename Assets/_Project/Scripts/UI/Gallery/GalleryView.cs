@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Arjoloka.Data;
 
 namespace Arjoloka.UI
 {
@@ -24,6 +25,7 @@ namespace Arjoloka.UI
         private void Start()
         {
             _itemButtonUI.onClick.AddListener(OnClickItem);
+            viewNameTextUI.text = TempleDataContainer.Instance.GetTempleDataWithID(viewID).TempleName;
         }
 
         // Core

@@ -1,14 +1,13 @@
-using System.Linq;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using Arjoloka.Data;
 
 namespace Arjoloka.UI
 {
     public class GalleryPopupUI : BasePopupUI
     {
         [Header("Gallery")]
-        [SerializeField] private GalleryData[] galleryDatas;
         [SerializeField] private TextMeshProUGUI tittleTextUI;
         [SerializeField] private TextMeshProUGUI descriptionTextUI;
         [SerializeField] private Image galleryImageUI;
@@ -19,25 +18,25 @@ namespace Arjoloka.UI
             base.InitOnStart();
 
             // Null checker
-            if (galleryDatas.Length == 0)
+            if (TempleDataContainer.Instance.IsTempleDatasNull())
             {
-                Debug.LogWarning("Gallery datas not assigned");
+                Debug.LogWarning("Temple datas not assigned");
                 return;
             }
         }
 
         public void SetPopupData(string galleryID)
         {
-            var data = galleryDatas.FirstOrDefault(x => x.GalleryID == galleryID);
+            var data = TempleDataContainer.Instance.GetTempleDataWithID(galleryID);
             if (data == null)
             {
                 Debug.LogWarning($"Data with ID {galleryID} not found");
                 return;
             }
 
-            tittleTextUI.text = data.GalleryName;
+            tittleTextUI.text = data.TempleName;
             descriptionTextUI.text = data.GalleryDescription;
-            galleryImageUI.sprite = data.GalleryImage;
+            galleryImageUI.sprite = data.TempleImage;
         }
     }
 }
