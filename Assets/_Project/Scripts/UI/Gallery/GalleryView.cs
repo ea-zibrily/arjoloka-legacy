@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,8 +8,12 @@ namespace Arjoloka.UI
     public class GalleryView : MonoBehaviour
     {
         [Header("Properties")]
+        [SerializeField] private string viewID;
         [SerializeField] private GameObject lockItemObj;
-        [SerializeField] private BasePopupUI explanationPopupUI;
+
+        [Header("UI")]
+        [SerializeField] private TextMeshProUGUI viewNameTextUI;
+        [SerializeField] private GalleryPopupUI explanationPopupUI;
         private Button _itemButtonUI;
 
         private void Awake()
@@ -31,6 +36,7 @@ namespace Arjoloka.UI
         private void OnClickItem()
         {
             explanationPopupUI.gameObject.SetActive(true);
+            explanationPopupUI.SetPopupData(viewID);
             explanationPopupUI.AnimateBounceUp();
         }
     }

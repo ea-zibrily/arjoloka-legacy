@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 8507783425326968145}
   - component: {fileID: 8679466059521774315}
   m_Layer: 5
-  m_Name: GalleryItem
+  m_Name: Gallery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,7 +210,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28e4046b5fbb07a4b8f5acc17a72edd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  viewID: 
   lockItemObj: {fileID: 5755435133535665144}
+  viewNameTextUI: {fileID: 1249055642359312115}
   explanationPopupUI: {fileID: 0}
 --- !u!1 &5624817286453381744
 GameObject:
