@@ -20,6 +20,7 @@ namespace Arjoloka.UI
         [SerializeField] protected RectTransform windowPopupRect;
         [SerializeField] private Button backButtonUI;
 
+
         // Methods
         private void Start()
         {
@@ -36,6 +37,10 @@ namespace Arjoloka.UI
         {
             AnimateBounceDown(() =>
             {
+                // Check timescale
+                if (Time.timeScale == 0)
+                    Time.timeScale = 1;
+                
                 gameObject.SetActive(false);
             });
 

@@ -6,10 +6,12 @@ namespace Arjoloka.UI
     public class IngameUIManager : MonoBehaviour
     {
         [Header("Ingame")]
-        [SerializeField] private BasePopupUI infoPopupUI;
-        [SerializeField] private BasePopupUI backPopupUI;
         [SerializeField] private Button infoButtonUI;
         [SerializeField] private Button backButtonUI;
+
+        [Space]
+        [SerializeField] private BasePopupUI infoPopupUI;
+        [SerializeField] private BasePopupUI backPopupUI;
 
         private void Start()
         {
