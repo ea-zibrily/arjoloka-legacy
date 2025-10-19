@@ -8,8 +8,8 @@ namespace Arjoloka.UI
     {
         [Header("Properties")]
         [SerializeField] private GalleryView[] galleryViews;
-        [SerializeField] private Button backButtonUI;
         [SerializeField] private GameObject galleryPopupUI;
+        [SerializeField] private Button backButtonUI;
         [SerializeField] private MenuUIManager menuManager;
 
         // Methods
